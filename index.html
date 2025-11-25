@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf - Thi An Binh Do</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            line-height: 1.5;
+            color: #000;
+            background-color: #fff;
+            font-size: 11pt;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .personal-data {
+            margin-bottom: 25px;
+        }
+
+        .personal-data h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table td {
+            padding: 3px 0;
+            vertical-align: top;
+        }
+
+        .data-table td:first-child {
+            font-weight: bold;
+            width: 150px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .section h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .experience-table, .education-table, .engagement-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        .experience-table td, .education-table td, .engagement-table td {
+            padding: 8px 0;
+            vertical-align: top;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .experience-table td:first-child, 
+        .education-table td:first-child,
+        .engagement-table td:first-child {
+            font-weight: bold;
+            width: 120px;
+        }
+
+        .job-title, .education-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .company, .institution {
+            font-style: italic;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .description li {
+            margin-bottom: 3px;
+        }
+
+        .grade {
+            font-style: italic;
+            color: #333;
+        }
+
+        @media print {
+            .container {
+                padding: 15mm;
+            }
+            
+            body {
+                font-size: 10pt;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .data-table td:first-child,
+            .experience-table td:first-child,
+            .education-table td:first-child,
+            .engagement-table td:first-child {
+                width: auto;
+                display: block;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Lebenslauf</h1>
+        </div>
+
+        <div class="personal-data">
+            <h2>Persönliche Daten</h2>
+            <table class="data-table">
+                <tr>
+                    <td>Name:</td>
+                    <td>Thi An Binh Do</td>
+                </tr>
+                <tr>
+                    <td>Anschrift:</td>
+                    <td>GutsMuthsstraße 39, 04177 Leipzig</td>
+                </tr>
+                <tr>
+                    <td>Telefon:</td>
+                    <td>+49 1794101443</td>
+                </tr>
+                <tr>
+                    <td>E-Mail:</td>
+                    <td>binh-do@hotmail.de</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Bildungsweg</h2>
+            <table class="education-table">
+                <tr>
+                    <td>seit 10/2023</td>
+                    <td>
+                        <div class="education-title">Wirtschaftsinformatik M. Sc</div>
+                        <div class="institution">Universität Leipzig</div>
+                        <div class="description">
+                            <ul>
+                                <li>Auslandssemester in Tokio, Japan</li>
+                                <li>Abschluss voraussichtlich 2026</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10/2022 - 09/2023</td>
+                    <td>
+                        <div class="education-title">Informatik B. Sc</div>
+                        <div class="institution">TU Dresden</div>
+                        <div class="description">
+                            <ul>
+                                <li>Erwerb notwendiger Leistungspunkte im Fachgebiet Informatik zur Qualifizierung zum Wirtschaftsinformatik M. Sc</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10/2018 - 09/2022</td>
+                    <td>
+                        <div class="education-title">Wirtschaftswissenschaften B. Sc</div>
+                        <div class="institution">TU Dresden</div>
+                        <div class="description">
+                            <ul>
+                                <li>Schwerpunkt Management mit Ergänzungsbereich Wirtschaftsinformatik</li>
+                                <li><span class="grade">Bachelornote: 1,8</span></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>08/2010 - 07/2018</td>
+                    <td>
+                        <div class="education-title">Gymnasium</div>
+                        <div class="institution">Magnus-Gottfried-Lichtwer-Gymnasium, Wurzen</div>
+                        <div class="description">
+                            <ul>
+                                <li><span class="grade">Abiturnote: 1,3</span></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>08/2007 - 07/2010</td>
+                    <td>
+                        <div class="education-title">Grundschule</div>
+                        <div class="institution">Diesterweg-Grundschule, Wurzen</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Auslandsaufenthalt</h2>
+            <table class="education-table">
+                <tr>
+                    <td>09/2024 - 03/2025</td>
+                    <td>
+                        <div class="education-title">Auslandssemester an der Waseda University in Tokio</div>
+                        <div class="description">
+                            <ul>
+                                <li>Förderung durch das PROMOS-Stipendienprogramm</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Studentische Tätigkeiten</h2>
+            <table class="experience-table">
+                <tr>
+                    <td>01/2022 - 08/2022</td>
+                    <td>
+                        <div class="job-title">Werkstudentin im Bereich Zentrales Marketing</div>
+                        <div class="company">System-Haus-Dresden GmbH, Dresden</div>
+                        <div class="description">
+                            <ul>
+                                <li>Vorbereitung, Umsetzung und Nachbereitung von Events für Kunden und Mitarbeitende</li>
+                                <li>Mitarbeit an Employer Branding Kampagnen</li>
+                                <li>Erstellung von Marketingmaterialien</li>
+                                <li>Analyse und Auswertung von Marketingmaßnahmen zur Erfolgskontrolle</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03/2021 - 05/2021</td>
+                    <td>
+                        <div class="job-title">Praktikantin im Bereich Marketing und Webdesign Management</div>
+                        <div class="company">Mindful Minds Management GmbH, Dietramszell</div>
+                        <div class="description">
+                            <ul>
+                                <li>Konzeptionelle Weiterentwicklung und Umsetzung von Marketingaktivitäten und -strategien</li>
+                                <li>Unterstützung bei der Planung, Produktion und Veröffentlichung von Content für Social Media Plattformen</li>
+                                <li>Mitarbeit an der Neugestaltung der Unternehmenswebsite mit Fokus auf UI/UX-Design</li>
+                                <li>Erstellung von Design-Prototypen in Figma zur Optimierung der Nutzererfahrung</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Ehrenamtliches Engagement</h2>
+            <table class="engagement-table">
+                <tr>
+                    <td>12/2019 - 07/2023</td>
+                    <td>
+                        <div class="job-title">Leiterin der Holzwerkstatt eines Kindergartens</div>
+                        <div class="company">Kinderhaus Regenbogen, Dresden</div>
+                        <div class="description">
+                            <ul>
+                                <li>Planung, Durchführung und Betreuung eines kreativen und handwerklichen Angebots</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>07/2021 - 08/2022</td>
+                    <td>
+                        <div class="job-title">Leiterin eines Backkurses für Senioren</div>
+                        <div class="company">DRK Kreisverband Dresden e.V. - Begegnung- und Beratungszentrum Johann, Dresden</div>
+                        <div class="description">
+                            <ul>
+                                <li>Förderung von Gemeinschaft und Austausch durch gemeinsames Backen</li>
+                                <li>Mitwirkung an der Vortragsreihe zur interkulturellen Begegnung mit dem Vortrag „Aus dem Leben einer vietnamesischen Gastfamilie"</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
